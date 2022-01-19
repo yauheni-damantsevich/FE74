@@ -158,6 +158,10 @@ p {
   background-color: #f8f8f8;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* header */
 
 header a:link {
@@ -181,37 +185,37 @@ header {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  display: flex;
+  background-color: #f38281;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin: 38px;
   text-align: center;
 }
 
-.logo,
-header ul,
-header li {
-  display: inline-block;
+header .container {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.logo {
-  margin-right: 402px;
-  vertical-align: middle;
+.wrapper {
+  display: flex;
 }
 
 .logo img {
   width: 97.64px;
   height: 26.1px;
-}
-
-.navigation li {
-  width: 114px;
-}
-
-.icon li {
-  margin: 36px 18px;
-  vertical-align: middle;
 }
 
 .icon img {
