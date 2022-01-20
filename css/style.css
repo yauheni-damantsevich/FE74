@@ -131,7 +131,6 @@ p {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  margin: 0 auto;
   color: #2d3033;
 }
 
@@ -295,7 +294,8 @@ header .container {
 }
 
 .main-numbered-section {
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .main-numbered-section p {
@@ -397,12 +397,15 @@ header .container {
   text-transform: uppercase;
 }
 
+.green-background {
+  background-color: #95e1d3;
+}
+
 .green-row {
-  background: #95e1d3;
   color: #fff;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .green-row div {
@@ -430,9 +433,12 @@ header .container {
 
 /* section 2 */
 
+.amazing-services {
+  display: flex;
+}
+
 .amazing-services-block {
-  text-align: left;
-  display: inline-block;
+  display: flex;
 }
 
 .amazing-services-block img {
@@ -440,7 +446,6 @@ header .container {
 }
 
 .amazing-services-block div {
-  display: inline-block;
   width: 270px;
   margin: 0 0 0 30px;
 }
@@ -462,11 +467,11 @@ header .container {
 .what-we-do {
   margin: 90px auto 114px auto;
   text-align: center;
+  display: flex;
 }
 
-.what-we-do img {
-  display: inline-block;
-  vertical-align: top;
+.what-we-do > img {
+  flex-shrink: 0;
 }
 
 .drop-down {
@@ -479,19 +484,18 @@ header .container {
 
 .drop-down-title {
   border: solid 1px #c6cbcd;
+  display: flex;
+  justify-content: space-between;
 }
 
 .drop-down-title img {
-  margin: 0 18px;
-  display: inline-block;
-  vertical-align: middle;
+  margin: 18px 25px;
 }
 
 .drop-down-title h3 {
   width: 354px;
   display: inline-block;
-  margin: 38px 22px 38px 26px;
-  vertical-align: middle;
+  align-self: center;
 }
 
 .drop-down p {
@@ -510,15 +514,19 @@ header .container {
 }
 
 .quote {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-block > img {
+  max-width: 170px;
+  max-height: 170px;
+  align-self: center;
 }
 
 .review-block {
-  margin: 0 45px;
-}
-
-.review-block img {
-  vertical-align: bottom;
+  display: flex;
+  padding: 42px;
 }
 
 .quote button {
@@ -529,9 +537,7 @@ header .container {
 }
 
 .quote div {
-  display: inline-block;
   text-align: left;
-  vertical-align: top;
 }
 
 .small-divider {
@@ -541,22 +547,20 @@ header .container {
   margin: 44px 38px;
 }
 
-.name div {
-  display: inline-block;
+.name {
+  display: flex;
 }
 
 .name p {
-  display: inline-block;
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 35px;
-  margin-top: 28px;
+  align-self: center;
 }
 
 .message > p {
-  width: 770px;
   margin: 42px 0 20px 30px;
   font-family: "Raleway";
   font-style: italic;
@@ -601,17 +605,20 @@ header .container {
 /* section 7 */
 
 .customers {
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .customers img {
-  margin: 72px 60px;
+  margin: 72px 0;
+}
+
+.grey-background {
 }
 
 /* section 8 */
 
-section:nth-of-type(9) {
+section:nth-of-type(10) {
   margin-bottom: 84px;
 }
 
@@ -621,8 +628,8 @@ section:nth-of-type(9) {
 
 /* section 11 */
 
-section:nth-of-type(11) {
-  width: 1510px;
+section:nth-of-type(12) {
+  max-width: 1510px;
   background-image: url(/images/happy_clients_background.png);
   margin-left: auto;
   margin-right: auto;
@@ -631,12 +638,13 @@ section:nth-of-type(11) {
   text-align: center;
 }
 
-section:nth-of-type(11) .kaushan-script {
+section:nth-of-type(12) .kaushan-script {
   padding-top: 42px;
 }
 
 .clients {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .client-block {
@@ -675,16 +683,13 @@ section:nth-of-type(11) .kaushan-script {
 /* section 12 */
 
 .latest-blog {
+  display: flex;
   margin-bottom: 84px;
+  justify-content: space-between;
 }
 
 article {
-  display: inline-block;
   text-align: left;
-}
-
-article:nth-of-type(2) {
-  margin: 24px;
 }
 
 article > img {
