@@ -295,7 +295,7 @@ header .container {
 
 .main-numbered-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .main-numbered-section p {
@@ -303,8 +303,6 @@ header .container {
 }
 
 .numbered-block {
-  display: inline-block;
-  width: 270px;
   color: #fff;
   font-family: "Raleway";
   font-style: normal;
@@ -312,7 +310,7 @@ header .container {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0 15px 20px 15px;
+  margin: 0 0 20px 0;
 }
 
 .numbered-block p {
@@ -332,14 +330,15 @@ header .container {
 .super-team-block {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: 96px 0;
 }
 
 .super-team {
   width: 370px;
   height: 338px;
   position: relative;
-  margin: 96px 15px;
+  margin: 9px;
 }
 
 .square {
@@ -406,10 +405,11 @@ header .container {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .green-row div {
-  width: 234px;
+  flex-grow: 1;
   padding: 64px 0;
   border: 1px solid #fff;
 }
@@ -435,10 +435,12 @@ header .container {
 
 .amazing-services {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .amazing-services-block {
   display: flex;
+  justify-content: space-between;
 }
 
 .amazing-services-block img {
@@ -466,20 +468,19 @@ header .container {
 
 .what-we-do {
   margin: 90px auto 114px auto;
-  text-align: center;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .what-we-do > img {
-  flex-shrink: 0;
+  margin-bottom: 15px;
 }
 
 .drop-down {
-  margin: 0 0 0 15px;
-  display: inline-block;
-  vertical-align: top;
-  width: 570px;
   text-align: left;
+  flex-shrink: 1;
+  flex-basis: 570px;
 }
 
 .drop-down-title {
@@ -493,9 +494,9 @@ header .container {
 }
 
 .drop-down-title h3 {
-  width: 354px;
-  display: inline-block;
+  text-align: left;
   align-self: center;
+  flex-grow: 1;
 }
 
 .drop-down p {
@@ -573,20 +574,18 @@ header .container {
 /* section 6 */
 
 .team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
 }
 
 .team-block {
   margin: 80px 0;
-  display: inline-block;
 }
 
 .team-block img {
   margin-bottom: 26px;
-}
-
-.team-block:nth-of-type(2) {
-  margin: 0 24px;
 }
 
 .team-block h3 {
@@ -607,6 +606,7 @@ header .container {
 .customers {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .customers img {
@@ -644,12 +644,9 @@ section:nth-of-type(12) .kaushan-script {
 
 .clients {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.client-block {
-  display: inline-block;
-  margin: 12px;
+  gap: 42px;
 }
 
 .client-block img {
@@ -675,7 +672,7 @@ section:nth-of-type(12) .kaushan-script {
 }
 
 .client-block p {
-  width: 369px;
+  max-width: 369px;
   text-align: left;
   margin: 32px 0 32px 38px;
 }
@@ -683,9 +680,10 @@ section:nth-of-type(12) .kaushan-script {
 /* section 12 */
 
 .latest-blog {
-  display: flex;
   margin-bottom: 84px;
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 article {
@@ -726,7 +724,7 @@ article p {
 /* section 13 */
 
 .latest-blog-small {
-  width: 1510px;
+  max-width: 1510px;
   height: 230px;
   background-image: url(../images/latest_blog_small_background.png);
   margin-left: auto;
