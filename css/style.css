@@ -185,31 +185,42 @@ header {
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  background-color: #f38281;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header ul {
   display: flex;
 }
 
-header li {
+nav li {
   margin: 38px;
   text-align: center;
+  align-self: center;
 }
 
 header .container {
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  position: absolute;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon li {
+  padding: 18px;
+  align-self: center;
+}
+
+.logo {
+  padding-right: 270px;
 }
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logo img {
@@ -296,6 +307,7 @@ header .container {
 .main-numbered-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-numbered-section p {
@@ -335,8 +347,6 @@ header .container {
 }
 
 .super-team {
-  width: 370px;
-  height: 338px;
   position: relative;
   margin: 9px;
 }
@@ -436,11 +446,14 @@ header .container {
 .amazing-services {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 90px 0;
 }
 
 .amazing-services-block {
   display: flex;
   justify-content: space-between;
+  flex-basis: 370px;
 }
 
 .amazing-services-block img {
@@ -448,7 +461,6 @@ header .container {
 }
 
 .amazing-services-block div {
-  width: 270px;
   margin: 0 0 0 30px;
 }
 
