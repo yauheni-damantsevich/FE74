@@ -591,6 +591,7 @@ section:nth-of-type(5) img {
 .review-block {
   display: flex;
   padding: 42px;
+  margin-bottom: 84px;
 }
 
 .quote button {
