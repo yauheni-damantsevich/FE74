@@ -105,6 +105,12 @@ h2 {
   color: #2d3033;
 }
 
+h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+}
+
 h3 {
   font-family: "Raleway";
   font-style: normal;
@@ -178,6 +184,11 @@ header a:focus {
   color: #f4bf87;
 }
 
+header a:hover {
+  color: #f4bf87;
+  transition-duration: 0.3s;
+}
+
 header {
   font-family: "Raleway";
   font-style: normal;
@@ -195,18 +206,22 @@ header {
 
 nav li::after {
   content: "";
+  width: 0;
   margin: 4px 0;
-  width: 140%;
   height: 1px;
-  background-color: #fff;
+  background-color: #f4bf87;
   opacity: 0;
   display: block;
+  transform: translateX(-15%);
 }
 
 li:hover::after {
+  width: 140%;
   display: block;
   opacity: 1;
   transform: translateX(-15%);
+  transition-duration: 0.3s;
+  color: #f4bf87;
 }
 
 header ul {
