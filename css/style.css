@@ -101,7 +101,7 @@ h1::after {
   height: 4px;
   background-color: #fff;
   margin: 58px 0;
-  transform: translateX(150%);
+  transform: translateX(calc(100% * 4 / 2 - 50%));
 }
 
 h2 {
@@ -162,7 +162,7 @@ p {
   padding: 60px 0 48px 0;
 }
 
-.text-align-center {
+.central-block {
   text-align: center;
 }
 
@@ -248,7 +248,7 @@ header .container {
   flex-wrap: wrap;
 }
 
-.icon li {
+.wrapper__icon li {
   padding: 18px;
   align-self: center;
 }
@@ -267,22 +267,14 @@ header .container {
   height: 26.1px;
 }
 
-.icon img {
+.wrapper__icon img {
   width: 24px;
   height: 24px;
 }
 
-.highlighter {
-  width: 85px;
-  height: 1px;
-  color: #f4bf87;
-  background-color: #f4bf87;
-  margin: 7px auto;
-}
-
 /* main section */
 
-.main-section {
+section:first-child {
   background-image: url(../images/main-background.png);
   background-repeat: no-repeat;
   max-width: 1510px;
@@ -290,12 +282,12 @@ header .container {
   margin-right: auto;
 }
 
-.main-block {
+section:first-child .first-section__central-block {
   padding: 177px 0 116px 0;
   text-align: center;
 }
 
-.main-kaushan-script {
+section:first-child .first-section__kaushan-script {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: normal;
@@ -328,24 +320,18 @@ header .container {
   color: #fff;
 }
 
-.main-number-line {
-  width: 270px;
-  height: 4px;
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-
-.main-numbered-section {
+.numbered-blocks {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.main-numbered-section p {
+.numbered-blocks p {
   text-align: left;
 }
 
-.numbered-block {
+.numbered-blocks__numbered-item {
+  flex: 1;
   color: #fff;
   font-family: "Raleway";
   font-style: normal;
@@ -356,11 +342,20 @@ header .container {
   margin: 0 0 20px 0;
 }
 
-.numbered-block p {
+.numbered-blocks__numbered-item::before {
+  display: block;
+  content: "";
+  width: calc(100% - 30px);
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.numbered-blocks__numbered-item p {
   color: #fff;
 }
 
-.big-number {
+.numbered-blocks__numbered-item span {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
@@ -377,7 +372,7 @@ header .container {
   margin: 96px 0;
 }
 
-.super-team {
+.super-team-block__super-team-item {
   position: relative;
   margin: 9px;
 }
@@ -412,11 +407,11 @@ header .container {
   transition: 0.3s;
 }
 
-.super-team:hover .square {
+.super-team-block__super-team-item:hover .square {
   opacity: 1;
 }
 
-.super-team:hover .square-gradient {
+.super-team-block__super-team-item:hover .square-gradient {
   opacity: 1;
   transition-delay: 0.15s;
 }
