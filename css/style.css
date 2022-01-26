@@ -377,7 +377,9 @@ section:first-child .first-section__kaushan-script {
   margin: 9px;
 }
 
-.square {
+.super-team-block__super-team-item::before {
+  display: block;
+  content: "";
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -407,7 +409,7 @@ section:first-child .first-section__kaushan-script {
   transition: 0.3s;
 }
 
-.super-team-block__super-team-item:hover .square {
+.super-team-block__super-team-item:hover::before {
   opacity: 1;
 }
 
