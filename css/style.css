@@ -367,14 +367,14 @@ section:first-child .first-section__kaushan-script {
 
 .super-team-block {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 96px 0;
+  justify-content: space-evenly;
+  gap: 9px;
 }
 
 .super-team-block__super-team-item {
   position: relative;
-  margin: 9px;
 }
 
 .super-team-block__super-team-item::before {
