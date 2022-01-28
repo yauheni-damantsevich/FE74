@@ -379,6 +379,7 @@ section:first-child .first-section__kaushan-script {
 
 .super-team-block__super-team-item {
   position: relative;
+  display: flex;
 }
 
 .super-team-block__super-team-item::before {
