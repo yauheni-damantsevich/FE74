@@ -264,6 +264,8 @@ nav {
 .logo {
   flex-grow: 4;
   text-align: start;
+  padding: 0 18px;
+  align-self: center;
 }
 
 .logo img {
@@ -369,7 +371,6 @@ section:first-child .first-section__kaushan-script {
 
 .super-team-block {
   display: flex;
-  flex-wrap: wrap;
   margin: 96px 0;
   justify-content: space-evenly;
   gap: 9px;
@@ -377,7 +378,11 @@ section:first-child .first-section__kaushan-script {
 
 .super-team-block__item {
   position: relative;
-  display: flex;
+}
+
+.super-team-block__item img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .super-team-block__item::before {
@@ -652,10 +657,12 @@ section:nth-of-type(5) img {
   justify-content: space-between;
   text-align: center;
   gap: 15px;
+  margin: 80px 0;
 }
 
-.team-block {
-  margin: 80px 0;
+.team-block img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .team-block-portrait {
@@ -741,7 +748,7 @@ section:nth-of-type(12) .kaushan-script {
 }
 
 .client-block {
-  flex-basis: 550px;
+  flex: 1;
   display: flex;
 }
 
@@ -790,11 +797,16 @@ section:nth-of-type(12) .kaushan-script {
   margin-bottom: 84px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .latest-blog-image {
   position: relative;
+}
+
+.latest-blog-image img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .latest-blog-image div {
@@ -810,6 +822,20 @@ section:nth-of-type(12) .kaushan-script {
 
 .latest-blog-image div > p {
   color: #ffffff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.latest-blog-image .big-number {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 30px;
 }
 
 article {
