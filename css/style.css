@@ -80,6 +80,9 @@
   max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
 h1 {
@@ -510,17 +513,12 @@ section:first-child .first-section__kaushan-script {
   margin: 90px auto 114px auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.what-we-do > img {
-  margin-bottom: 15px;
+  gap: 15px;
 }
 
 .drop-down {
   text-align: left;
   flex-shrink: 1;
-  flex-basis: 570px;
 }
 
 .drop-down__block__title {
@@ -650,8 +648,8 @@ section:nth-of-type(5) img {
 .team {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   text-align: center;
+  gap: 15px;
 }
 
 .team-block {
@@ -700,7 +698,6 @@ section:nth-of-type(5) img {
 .customers {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 73px;
 }
 
