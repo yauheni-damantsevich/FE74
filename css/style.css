@@ -207,7 +207,6 @@ header {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  display: flex;
   position: absolute;
   left: 0;
   right: 0;
@@ -246,11 +245,11 @@ nav li {
   align-self: center;
 }
 
-header .container {
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  gap: ;
 }
 
 .wrapper__icon li {
@@ -259,7 +258,6 @@ header .container {
 }
 
 .logo {
-  padding-right: 270px;
 }
 
 .wrapper {
@@ -707,13 +705,11 @@ section:nth-of-type(5) img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 73px;
 }
 
 .customers img {
   margin: 72px 0;
-}
-
-.grey-background {
 }
 
 /* section 9 */
@@ -760,7 +756,7 @@ section:nth-of-type(12) .kaushan-script {
   width: 50%;
   height: 4px;
   background-color: #f38281;
-  transform: translate(, 24px);
+  transform: translate(24px);
   margin-top: 38px;
 }
 
