@@ -215,7 +215,6 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  /* width: 100%; */
 }
 
 nav li::after {
@@ -240,10 +239,12 @@ li:hover::after {
 
 header ul {
   display: flex;
+  justify-content: space-evenly;
 }
 
-nav li {
-  margin: 38px;
+nav {
+  flex-grow: 2;
+  margin: 38px 0;
   text-align: center;
   align-self: center;
 }
@@ -255,13 +256,14 @@ nav li {
 }
 
 .wrapper__icon li {
+  flex-grow: 1;
   padding: 18px;
   align-self: center;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
+.logo {
+  flex-grow: 4;
+  text-align: start;
 }
 
 .logo img {
