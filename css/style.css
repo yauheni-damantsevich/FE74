@@ -249,15 +249,11 @@ nav li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: ;
 }
 
 .wrapper__icon li {
   padding: 18px;
   align-self: center;
-}
-
-.logo {
 }
 
 .wrapper {
