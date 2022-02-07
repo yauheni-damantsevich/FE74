@@ -95,6 +95,7 @@ h1 {
   color: #fff;
   text-transform: uppercase;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 h1::after {
@@ -103,7 +104,7 @@ h1::after {
   width: 25%;
   height: 4px;
   background-color: #fff;
-  margin: 58px 0;
+  margin-top: 58px;
   transform: translateX(calc(100% * 4 / 2 - 50%));
 }
 
@@ -180,6 +181,32 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    margin-bottom: 95px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 /* header */
@@ -287,8 +314,9 @@ section:first-child {
 }
 
 section:first-child .first-section__central-block {
-  padding: 177px 0 116px 0;
   text-align: center;
+  padding-top: 174px;
+  margin-bottom: 210px;
 }
 
 section:first-child .first-section__kaushan-script {
@@ -301,8 +329,6 @@ section:first-child .first-section__kaushan-script {
 }
 
 .learn-more {
-  width: 370px;
-  height: 80px;
   border: 4px solid #fff;
   font-family: "Raleway";
   font-style: normal;
@@ -311,17 +337,22 @@ section:first-child .first-section__kaushan-script {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 auto;
-  padding: 22px;
+  padding: 22px 108px;
 }
 
-.learn-more a:link {
+.learn-more:link {
   text-decoration: none;
   color: #fff;
 }
 
-.learn-more a:visited {
+.learn-more:visited {
   text-decoration: none;
   color: #fff;
+}
+
+.learn-more:hover {
+  color: #e4be8d;
+  background-color: #ffffff;
 }
 
 .numbered-blocks {
@@ -365,6 +396,44 @@ section:first-child .first-section__kaushan-script {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
+}
+
+@media (max-width: 1024px) {
+  section:first-child .first-section__central-block {
+  }
+
+  section:first-child .first-section__kaushan-script {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  h1 {
+    font-size: 96px;
+    line-height: 117px;
+  }
+
+  .learn-more {
+    max-width: 318px;
+    padding: 16px 100px;
+  }
+
+  .numbered-blocks__numbered-item::before {
+    margin-bottom: 15px;
+  }
+
+  .numbered-blocks__numbered-item span {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .numbered-blocks__numbered-item p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .numbered-blocks__numbered-item {
+    margin-bottom: 14px;
+  }
 }
 
 /* section 1 */
@@ -479,6 +548,46 @@ section:first-child .first-section__kaushan-script {
   color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .green-row div {
+    padding: 34px 0;
+  }
+
+  .green-row span {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .green-row p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .super-team-block {
+    margin: 48px 0;
+  }
+
+  .square-gradient {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      360deg,
+      rgba(237, 215, 137, 0.9) 0%,
+      rgba(233, 130, 131, 0.9) 100%
+    );
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-52.5%, -52.5%);
+    transition-delay: 0.5s;
+    transition: 0.3s;
+  }
+}
+
 /* section 2 */
 
 .amazing-services {
@@ -492,6 +601,7 @@ section:first-child .first-section__kaushan-script {
   display: flex;
   justify-content: space-between;
   flex-basis: 370px;
+  text-align: left;
 }
 
 .amazing-services__item img {
@@ -499,11 +609,11 @@ section:first-child .first-section__kaushan-script {
 }
 
 .amazing-services__item div {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 35px;
 }
 
-.amazing-services-block h3 {
-  margin: 0 0 30px 0;
+.amazing-services__item h3 {
+  margin: 0 0 35px 0;
 }
 
 .margin-140px {
@@ -512,6 +622,28 @@ section:first-child .first-section__kaushan-script {
 
 .margin-90px {
   margin-bottom: 90px;
+}
+
+@media (max-width: 1024px) {
+  .amazing-services__item div {
+    margin: 0 0 0 25px;
+  }
+
+  .margin-140px {
+    margin-bottom: 70px;
+  }
+
+  .amazing-services {
+    gap: 70px;
+  }
+
+  .amazing-services__item h3 {
+    margin: 0 0 25px 0;
+  }
+
+  .margin-90px {
+    margin-bottom: 90px;
+  }
 }
 
 /* section 4 */
@@ -559,6 +691,13 @@ section:first-child .first-section__kaushan-script {
 .drop-down__block {
   margin-bottom: 22px;
 }
+
+@media (max-width: 1024px) {
+  .drop-down__block__title img {
+    margin: 20px 18px;
+  }
+}
+
 /* section 5 */
 
 section:nth-of-type(5) {
@@ -650,6 +789,17 @@ section:nth-of-type(5) img {
   color: #a9afb1;
 }
 
+@media (max-width: 1024px) {
+  .message > p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .name p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
 /* section 7 */
 
 .team {
@@ -702,6 +852,17 @@ section:nth-of-type(5) img {
   text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+  .team-block h3 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .team-block p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 /* section 8 */
 
 .customers {
@@ -744,7 +905,7 @@ section:nth-of-type(12) .kaushan-script {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 42px;
+  gap: 114px;
 }
 
 .client-block {
@@ -758,7 +919,6 @@ section:nth-of-type(12) .kaushan-script {
   width: 50%;
   height: 4px;
   background-color: #f38281;
-  transform: translate(24px);
   margin-top: 38px;
 }
 
@@ -789,6 +949,12 @@ section:nth-of-type(12) .kaushan-script {
   width: fit-content;
   text-align: left;
   margin: 32px 0 32px 38px;
+}
+
+@media (max-width: 1024px) {
+  .clients {
+    gap: 42px;
+  }
 }
 
 /* section 13 */
@@ -822,7 +988,7 @@ section:nth-of-type(12) .kaushan-script {
 
 .latest-blog-image div > p {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -831,7 +997,7 @@ section:nth-of-type(12) .kaushan-script {
 }
 
 .latest-blog-image .big-number {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -870,6 +1036,13 @@ article h3 {
 .likes-comments button > img {
   padding: 0 16px 0 0;
   vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  .likes-comments button {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 /* section 14 */
