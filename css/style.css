@@ -316,7 +316,7 @@ section:first-child {
 section:first-child .first-section__central-block {
   text-align: center;
   padding-top: 174px;
-  margin-bottom: 210px;
+  margin-bottom: 310px;
 }
 
 section:first-child .first-section__kaushan-script {
@@ -400,6 +400,8 @@ section:first-child .first-section__kaushan-script {
 
 @media (max-width: 1024px) {
   section:first-child .first-section__central-block {
+    padding-top: 120px;
+    margin-bottom: 210px;
   }
 
   section:first-child .first-section__kaushan-script {
@@ -876,6 +878,20 @@ section:nth-of-type(5) img {
 }
 
 /* section 9 */
+
+section:nth-of-type(10) .central-block {
+  margin-bottom: 70px;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-grid__item {
+  display: flex;
+  flex-direction: column;
+}
 
 section:nth-of-type(10) {
   margin-bottom: 84px;
