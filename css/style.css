@@ -454,6 +454,8 @@ section:first-child .first-section__kaushan-script {
 
 .super-team-block__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .super-team-block__item img {
