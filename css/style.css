@@ -488,8 +488,8 @@ section:first-child .first-section__kaushan-script {
     rgba(233, 130, 131, 0.9) 100%
   );
 
-  top: -16px;
-  left: -16px;
+  top: 0;
+  left: 0;
   transition-delay: 0.5s;
   transition: 0.3s;
 }
@@ -501,6 +501,8 @@ section:first-child .first-section__kaushan-script {
 .super-team-block__item:hover .square-gradient {
   opacity: 1;
   transition-delay: 0.15s;
+  top: -16px;
+  left: -16px;
 }
 
 .hover-content {
@@ -847,6 +849,8 @@ section:nth-of-type(5) img {
 .team-block-portrait:hover .square-gradient {
   opacity: 1;
   transition-delay: 0.15s;
+  top: -16px;
+  left: -16px;
 }
 
 .team-block h3 {
