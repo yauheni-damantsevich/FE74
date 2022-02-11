@@ -305,7 +305,7 @@ nav {
   height: 24px;
 }
 
-/* main section */
+/* section 1 (main) */
 
 section:first-child {
   background-image: url(../images/main-background.png);
@@ -443,7 +443,7 @@ section:first-child .first-section__kaushan-script {
   }
 }
 
-/* section 1 */
+/* section 2 */
 
 .super-team-block {
   display: flex;
@@ -591,7 +591,7 @@ section:first-child .first-section__kaushan-script {
   }
 }
 
-/* section 2 */
+/* section 3 */
 
 .amazing-services {
   display: flex;
