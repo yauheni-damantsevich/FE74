@@ -580,21 +580,9 @@ section:first-child .first-section__kaushan-script {
     margin: 48px 0;
   }
 
-  .square-gradient {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      360deg,
-      rgba(237, 215, 137, 0.9) 0%,
-      rgba(233, 130, 131, 0.9) 100%
-    );
-
-    top: -4px;
-    left: -4px;
-    transition-delay: 0.5s;
-    transition: 0.3s;
+  .super-team-block__item:hover .square-gradient {
+    top: -6px;
+    left: -6px;
   }
 
   .hover-content p {
@@ -834,10 +822,22 @@ section:nth-of-type(5) img {
   position: relative;
 }
 
+.team-block-portrait a {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-hover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .social-hover ul {
   display: flex;
-  margin: 200px 0;
   justify-content: center;
+  align-items: center;
 }
 
 .social-hover li {
@@ -870,6 +870,10 @@ section:nth-of-type(5) img {
 }
 
 @media (max-width: 1024px) {
+  .team-block-portrait:hover .square-gradient {
+    top: -6px;
+    left: -6px;
+  }
   .team-block h3 {
     font-size: 18px;
     line-height: 21px;
