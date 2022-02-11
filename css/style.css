@@ -596,6 +596,11 @@ section:first-child .first-section__kaushan-script {
     transition-delay: 0.5s;
     transition: 0.3s;
   }
+
+  .hover-content p {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 /* section 2 */
@@ -904,6 +909,11 @@ section:nth-of-type(10) .central-block {
   flex-direction: column;
 }
 
+.gallery-grid__item > img {
+  width: 100%;
+  height: auto;
+}
+
 section:nth-of-type(10) {
   margin-bottom: 84px;
 }
@@ -941,6 +951,13 @@ section:nth-of-type(10) {
 
 .hover-content img {
   margin-bottom: 57px;
+}
+
+@media (max-width: 1024px) {
+  .hover-content p:nth-child(3) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 /* section 10 */
