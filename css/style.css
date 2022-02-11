@@ -962,6 +962,9 @@ section:nth-of-type(10) {
     font-size: 14px;
     line-height: 16px;
   }
+  .hover-content img {
+    margin-bottom: 38px;
+  }
 }
 
 /* section 10 */
