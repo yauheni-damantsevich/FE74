@@ -308,7 +308,6 @@ nav {
 
 section:first-child {
   background-image: url(../images/main-background.png);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -403,6 +402,10 @@ section:first-child .first-section__kaushan-script {
 }
 
 @media (max-width: 1024px) {
+  section:first-child {
+    background-image: url(../images/tablet/background-1.png);
+  }
+
   section:first-child .first-section__central-block {
     padding-top: 120px;
     margin-bottom: 210px;
@@ -724,6 +727,12 @@ section:nth-of-type(5) img {
   position: absolute;
 }
 
+@media (max-width: 1024px) {
+  section:nth-of-type(5) {
+    background-image: url(../images/tablet/background-2.png);
+  }
+}
+
 /* section 6 */
 
 .grey-background {
@@ -1040,6 +1049,10 @@ section:nth-of-type(12) .kaushan-script {
   .clients {
     gap: 42px;
   }
+
+  section:nth-of-type(12) {
+    background-image: url(../images/tablet/background-3.png);
+  }
 }
 
 /* section 13 */
@@ -1153,6 +1166,12 @@ section:nth-of-type(12) .kaushan-script {
 
 .latest-blog-small h2 {
   color: #f38281;
+}
+
+@media (max-width: 1024px) {
+  .latest-blog-small {
+    background-image: url(../images/tablet/background-4.png);
+  }
 }
 
 /* footer */
