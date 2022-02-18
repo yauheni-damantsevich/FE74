@@ -841,6 +841,10 @@ section:first-child .first-section__kaushan-script {
     margin-bottom: 30px;
   }
 
+  .what-we-do picture > img {
+    width: 100%;
+  }
+
   .drop-down__block__title h3 {
     font-size: 14px;
     line-height: 16px;
