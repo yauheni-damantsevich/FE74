@@ -417,8 +417,26 @@ section:first-child .first-section__kaushan-script {
   content: "";
   width: calc(100% - 30px);
   height: 4px;
-  background-color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(243, 130, 129, 1) 0%,
+    rgba(243, 130, 129, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   margin-bottom: 20px;
+}
+
+.numbered-blocks__numbered-item:hover::before {
+  display: block;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(243, 130, 129, 1) 0%,
+    rgba(243, 130, 129, 1) 25%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .numbered-blocks__numbered-item p {
@@ -514,6 +532,16 @@ section:first-child .first-section__kaushan-script {
 
   section:first-child .numbered-blocks__numbered-item p {
     display: none;
+  }
+
+  .numbered-blocks__numbered-item:hover::before {
+    display: block;
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(243, 130, 129, 1) 0%,
+      rgba(243, 130, 129, 1) 100%
+    );
   }
 }
 
@@ -817,6 +845,10 @@ section:first-child .first-section__kaushan-script {
     font-size: 14px;
     line-height: 16px;
   }
+
+  .drop-down p {
+    padding: 22px 76px 22px 22px;
+  }
 }
 
 /* section 5 */
@@ -1106,6 +1138,11 @@ section:nth-of-type(5) .container {
     display: flex;
   }
 
+  .square-gradient {
+    top: 100%;
+    overflow: hidden;
+  }
+
   .team-block-portrait:hover .square-gradient {
     top: 70%;
     left: 0;
@@ -1130,7 +1167,7 @@ section:nth-of-type(5) .container {
   }
 
   .team-block .square-gradient {
-    left: 100%;
+    left: 0%;
     top: 100%;
   }
 }
@@ -1290,7 +1327,7 @@ section:nth-of-type(10) {
 @media (max-width: 768px) {
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 158px 158px 158px 158px 158px;
     grid-template-areas:
       "a c"
       "e c"
@@ -1314,6 +1351,10 @@ section:nth-of-type(10) {
 
   .hover-content p:nth-child(2) {
     margin: 0;
+  }
+
+  .gallery-grid .hover-content {
+    display: none;
   }
 }
 
