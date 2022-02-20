@@ -513,7 +513,9 @@ section:first-child .first-section__kaushan-script {
   }
 
   .learn-more {
-    padding: 16px 76px;
+    display: inline-block;
+    width: 100%;
+    padding: 16px 0;
     font-size: 18px;
     line-height: 21px;
   }
@@ -721,6 +723,11 @@ section:first-child .first-section__kaushan-script {
 
   .hover-content {
     flex-direction: row;
+  }
+
+  .green-row div {
+    border: none;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -1093,6 +1100,14 @@ section:nth-of-type(5) .container {
   align-self: center;
 }
 
+.social-hover li:hover svg > rect {
+  fill: #f38281;
+}
+
+.social-hover li:hover svg > path {
+  fill: #fff;
+}
+
 .team-block-portrait:hover .square {
   opacity: 1;
 }
@@ -1358,7 +1373,13 @@ section:nth-of-type(10) {
   }
 
   .gallery-grid .hover-content {
-    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-grid .hover-content p:nth-child(2) {
+    margin-bottom: 8px;
   }
 }
 
