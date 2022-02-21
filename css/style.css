@@ -1523,8 +1523,8 @@ section:nth-of-type(12) .kaushan-script {
 .latest-blog-image div {
   max-width: 80px;
   position: absolute;
-  top: 55%;
   left: -8px;
+  bottom: 25px;
   padding: 10px 20px;
   background-color: #95e1d3;
   text-align: center;
@@ -1586,6 +1586,10 @@ section:nth-of-type(12) .kaushan-script {
   .likes-comments button {
     font-size: 12px;
     line-height: 14px;
+  }
+
+  .latest-blog-image div {
+    bottom: 21px;
   }
 }
 
